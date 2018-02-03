@@ -34,23 +34,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/sign_in_background"
-        android:padding="16dp">
+        android:paddingEnd="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp">
 
 
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
             android:columnCount="2"
-            android:rowCount="2">
+            android:rowCount="5">
 
             <android.support.v7.widget.CardView
+                android:id="@+id/cardview_id1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="5dp"
                 android:layout_rowWeight="1"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
@@ -60,9 +65,9 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/holo_red_dark"
-                        android:src="@drawable/wanted" />
+                        android:layout_height="150dp"
+                        android:scaleType="center"
+                        android:src="@drawable/quiz" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -85,7 +90,7 @@
                             android:text="Protocol - (QUIZ)"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="28sp"
+                            android:textSize="23sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -94,12 +99,14 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/cardview_id2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="5dp"
                 android:layout_rowWeight="1"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
@@ -109,9 +116,9 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/holo_red_dark"
-                        android:src="@drawable/wanted" />
+                        android:layout_height="150dp"
+                        android:scaleType="center"
+                        android:src="@drawable/devapps" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -122,7 +129,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Feb 03 Sat"
+                            android:text="Feb 04 Sat"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
                             android:textSize="20sp" />
@@ -131,10 +138,10 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
-                            android:text="Protocol - (QUIZ)"
+                            android:text="Protocol - DEVAPPS"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="28sp"
+                            android:textSize="23sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -143,12 +150,14 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/cardview_id3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="5dp"
                 android:layout_rowWeight="1"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
@@ -158,9 +167,9 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/holo_red_dark"
-                        android:src="@drawable/wanted" />
+                        android:layout_height="150dp"
+                        android:scaleType="center"
+                        android:src="@drawable/pitchproduct" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -180,10 +189,10 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
-                            android:text="Protocol - (QUIZ)"
+                            android:text="Protocol - (PITCH PRODUCT)"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="28sp"
+                            android:textSize="23sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -192,12 +201,14 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/cardview_id4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="5dp"
                 android:layout_rowWeight="1"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
@@ -207,9 +218,9 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/holo_red_dark"
-                        android:src="@drawable/wanted" />
+                        android:layout_height="150dp"
+                        android:scaleType="center"
+                        android:src="@drawable/mockinterview" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -229,10 +240,10 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
-                            android:text="Protocol - (QUIZ)"
+                            android:text="Protocol - (MOCK INTERVIEW)"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="28sp"
+                            android:textSize="23sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -241,12 +252,14 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/cardview_id5"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="5dp"
                 android:layout_rowWeight="1"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
@@ -256,9 +269,9 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/holo_red_dark"
-                        android:src="@drawable/wanted" />
+                        android:layout_height="150dp"
+                        android:scaleType="center"
+                        android:src="@drawable/blindtypo" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -269,7 +282,7 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Feb 03 Sat"
+                            android:text="Feb 04 Sat"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
                             android:textSize="20sp" />
@@ -278,10 +291,10 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
-                            android:text="Protocol - (QUIZ)"
+                            android:text="Protocol - (BLIND TYPO)"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="28sp"
+                            android:textSize="23sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -290,12 +303,14 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/cardview_id6"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="5dp"
                 android:layout_rowWeight="1"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
@@ -305,9 +320,9 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/holo_red_dark"
-                        android:src="@drawable/wanted" />
+                        android:layout_height="150dp"
+                        android:scaleType="center"
+                        android:src="@drawable/photoranger" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -327,10 +342,10 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
-                            android:text="Protocol - (QUIZ)"
+                            android:text="Protocol - PHOTO RANGER"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="28sp"
+                            android:textSize="23sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -339,12 +354,14 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/cardview_id7"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="5dp"
                 android:layout_rowWeight="1"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
@@ -354,9 +371,9 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/holo_red_dark"
-                        android:src="@drawable/wanted" />
+                        android:layout_height="150dp"
+                        android:scaleType="center"
+                        android:src="@drawable/codex" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -376,10 +393,10 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
-                            android:text="Protocol - (QUIZ)"
+                            android:text="Protocol - CODEX"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="28sp"
+                            android:textSize="23sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -388,12 +405,14 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/cardview_id8"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="5dp"
                 android:layout_rowWeight="1"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
@@ -403,9 +422,9 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/holo_red_dark"
-                        android:src="@drawable/wanted" />
+                        android:layout_height="150dp"
+                        android:scaleType="center"
+                        android:src="@drawable/findit" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -425,10 +444,10 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
-                            android:text="Protocol - (QUIZ)"
+                            android:text="Protocol - (FIND IT)"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="28sp"
+                            android:textSize="23sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -437,12 +456,14 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/cardview_id9"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="5dp"
                 android:layout_rowWeight="1"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
@@ -452,9 +473,9 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/holo_red_dark"
-                        android:src="@drawable/wanted" />
+                        android:layout_height="150dp"
+                        android:scaleType="center"
+                        android:src="@drawable/gopherhopper" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -474,10 +495,10 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
-                            android:text="Protocol - (QUIZ)"
+                            android:text="Protocol - (GOHPER HOPPER)"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="28sp"
+                            android:textSize="23sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
@@ -486,12 +507,14 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
+                android:id="@+id/cardview_id10"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:layout_gravity="fill"
                 android:layout_margin="5dp"
                 android:layout_rowWeight="1"
+                app:cardCornerRadius="16dp"
                 app:cardElevation="10dp">
 
                 <LinearLayout
@@ -501,9 +524,9 @@
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@android:color/holo_red_dark"
-                        android:src="@drawable/wanted" />
+                        android:layout_height="150dp"
+                        android:scaleType="center"
+                        android:src="@drawable/combinations" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -523,10 +546,10 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
-                            android:text="Protocol - (QUIZ)"
+                            android:text="Protocol - (COMBINATIONS)"
                             android:textAlignment="center"
                             android:textColor="@android:color/black"
-                            android:textSize="28sp"
+                            android:textSize="23sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 

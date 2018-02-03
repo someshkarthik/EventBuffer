@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign_in_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="ccom.appz.abhi.daksheventbuffer.Signing">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="cursive"
+        android:text="Event Buffer"
+        android:textColor="@android:color/black"
+        android:textSize="50sp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp">
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/sign_in_btn_id"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/curved_btn_background"
+        android:text="SIGN IN" />
+
+    <LinearLayout
+        android:id="@+id/or_ll_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_in_btn_id"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <View
+                android:id="@+id/left_divider_id"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/divider_or_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:text="OR"
+                android:textColor="@android:color/black" />
+
+            <View
+                android:id="@+id/right_divider_id"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@android:color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/creat_account_btn_id"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/or_ll_id"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/curved_btn_background"
+        android:text="Create account" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/sign_in_btn_id"
+        android:layout_alignRight="@+id/sign_in_btn_id"
+        android:layout_centerVertical="true"
+        android:layout_gravity="end"
+        android:text="Forgot Password?"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_alignLeft="@+id/sign_in_btn_id"
+        android:layout_alignStart="@+id/sign_in_btn_id"
+        android:layout_marginBottom="11dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Email-Id/Username"
+            android:minWidth="300dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Password"
+            android:minWidth="300dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

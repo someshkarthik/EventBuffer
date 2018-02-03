@@ -9,17 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".EventsActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".EventsActivity" />
         <activity android:name=".FestivalsActivity" />
         <activity android:name=".TimelineActivity" />
-        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".DevappsActivity" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".PitchProductActivity" />
+        <activity android:name=".MockInterviewActivity" />
+        <activity android:name=".BlindTypoActivity" />
+        <activity android:name=".PhotoRangerActivity" />
+        <activity android:name=".CodexActivity" />
+        <activity android:name=".FindItActivity" />
+        <activity android:name=".HopperActivity" />
+        <activity android:name=".CombinationsActivity"></activity>
     </application>
 
 </manifest>
