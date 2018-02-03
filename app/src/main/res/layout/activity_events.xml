@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
     android:orientation="vertical"
     tools:context="com.appz.abhi.daksheventbuffer.EventsActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_events_id"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
 
         <ImageView
             android:id="@+id/nav_circle_events_id"
@@ -32,7 +32,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/sign_in_background"
+        android:padding="16dp">
 
 
         <GridLayout

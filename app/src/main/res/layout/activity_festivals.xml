@@ -3,12 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.appz.abhi.daksheventbuffer.FestivalsActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar_festivals_id"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
 
         <ImageView
             android:id="@+id/nav_circle_festivals_id"
@@ -26,5 +28,12 @@
             android:textSize="30sp" />
 
     </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sign_in_background">
+
+    </LinearLayout>
 
 </LinearLayout>
